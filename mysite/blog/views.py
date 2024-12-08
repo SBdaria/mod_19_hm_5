@@ -22,13 +22,3 @@ def catalog(request):
         'per_page': per_page
     }
     return render(request, 'catalogpage.html', context)
-
-
-
-
-
-
-
-
-    # Передаем данные в шаблон
-    return render(request, 'post_list.html', {'page_obj': page_obj, 'per_page': per_page})
